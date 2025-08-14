@@ -77,14 +77,16 @@ section h1{
 }
 
 .img{
-    scale: 0.8;
-    z-index: -1;
+    background-image: url(ratantata.jpeg);
+    width: 1900px;
+    height: 370px;
+    background-size: cover;
 }
 
 /* education section */
 #box{
     width: 200px;
-    height:150px;
+    height:auto;
     border: 2px solid whitesmoke;
     display: inline-block;
     margin: 10px;
@@ -240,11 +242,22 @@ section h1{
     }
     #content p{
         font-size: 18px;
+        margin: 0;
+        padding: 15px;
     }
 
     .img{
         display: flex;
-        scale: 0.7;
+        justify-content: center;
+        align-items: center;
+        width: 340px;
+        height: 370px;
+        background-size: contain;
+        background-image: url(ratantata.jpeg);
+        /* margin: 0;
+        padding: 0;
+        display: flex;
+        scale: 0.7; */
 
     }
     /* education section */
