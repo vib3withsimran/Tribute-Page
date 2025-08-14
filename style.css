@@ -1,0 +1,273 @@
+.body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0 0 0 0;
+}
+body, html {
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    border-radius: 10px;
+    position: fixed;
+    top: 5px;
+    background-color: rgb(23, 22, 22);
+    color: white;
+    z-index: 10;
+}
+
+.heading{
+    font-size: 50px;
+    padding: 10px;
+    width: 400px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.menubar{
+    visibility: hidden;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 35px;
+}
+.navbar a:hover{
+    color:aquamarine;
+}
+.navbar a.active{
+    color: aquamarine;
+}
+
+#about{
+    height: auto;
+    width: 100%;
+    text-align: center;
+    background-color: antiquewhite;
+    margin-top: 70px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+section h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#about p{
+    font-size: 20px;
+    padding: 10px 50px;
+    text-align: center;
+}
+
+#content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.img{
+    scale: 0.8;
+    z-index: -1;
+}
+
+/* education section */
+#box{
+    width: 200px;
+    height:150px;
+    border: 2px solid whitesmoke;
+    display: inline-block;
+    margin: 10px;
+}
+#edus{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#arrow{
+    display: inline-block;
+    position:relative;
+    bottom: 50px;
+}
+#mobileArrow{
+    visibility: hidden;
+}
+
+#education{
+    width: 100%;
+    height: auto;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+
+
+#career{
+    margin-top: 10px;
+    padding-top: 20px;
+    text-align: center;
+    background-color: antiquewhite;
+    height: auto;
+}
+#career p{
+    padding: 7px;
+}
+#career h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#career h2{
+    font-size:30px;
+}
+#img img{
+    height: 150px;
+    width: auto;
+    display: inline-block;
+    align-items: center;
+    padding-bottom: 0px;
+}
+
+#img{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 180px;
+    border: 2px solid black;
+}
+
+#paraimg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;}
+
+#Lifeanddeath{
+    margin-top: 10px;
+    padding-top: 10px;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: auto;
+}
+
+.life{
+    width:auto;
+    margin: 10px;
+    height: auto;
+    border: white solid 2px;
+    display: block;
+    align-items: center;
+}
+
+
+/* awards section */
+#awards{
+    background-color: antiquewhite;
+    color: black;
+    text-align: center;
+    padding-bottom: 30px;
+    height: auto;
+}
+
+#awards div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 270px;
+    width: min-content;
+    border: solid 2px black;
+    margin-left: 35%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+@media (max-width: 600px) {
+    .navbar{
+        margin-top: -900px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 10%;
+        width: 100%;
+        height: auto;
+        transition: all 1s ease-in-out;
+        background-color: black;
+        color: whitesmoke;
+    }
+    .navbar a{
+        margin: 10px;
+    }
+
+    .menubar{
+        visibility: visible;
+        font-size: larger;
+        padding: 10px;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #content{
+        display: flex;
+        flex-direction: column;
+    }
+    #content p{
+        font-size: 18px;
+    }
+
+    .img{
+        display: flex;
+        scale: 0.7;
+
+    }
+    /* education section */
+    #edus{
+        flex-direction: column;
+    }
+    #arrow{
+        visibility: hidden;
+        display: none;
+    }
+    #mobileArrow{
+        visibility: visible;
+
+    }
+
+    /* career section */
+    #paraimg{
+        flex-direction: column;
+    }
+
+    /* awards  */
+    #awards div{
+        margin-left:15%;
+    }
+}
+
